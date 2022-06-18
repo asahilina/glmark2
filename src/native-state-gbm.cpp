@@ -87,11 +87,6 @@ NativeStateGBM::window(WindowProperties& properties)
 void
 NativeStateGBM::visible(bool v)
 {
-    if (!v)
-        return;
-
-    Log::error("visible not supported\n");
-    should_quit_ = true;
 }
 
 volatile std::sig_atomic_t NativeStateGBM::should_quit_(false);
@@ -111,8 +106,6 @@ NativeStateGBM::should_quit()
 void
 NativeStateGBM::flip()
 {
-    Log::error("flip not supported\n");
-    should_quit_ = true;
 }
 
 void

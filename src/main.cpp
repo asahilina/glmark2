@@ -198,11 +198,7 @@ main(int argc, char *argv[])
 
     CanvasGeneric canvas(native_state, gl_state, Options::size.first, Options::size.second);
 
-#if GLMARK2_USE_GBM
-    canvas.offscreen(true);
-#else
     canvas.offscreen(Options::offscreen);
-#endif
 
     canvas.visual_config(Options::visual_config);
 
